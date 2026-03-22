@@ -6,6 +6,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { siteConfig, education } from "@/data/config";
 import { GraduationCap, MapPin, Download } from "lucide-react";
+import "@/styles/prose.css";
 
 export const metadata: Metadata = {
   title: "About",
@@ -99,94 +100,6 @@ export default async function AboutPage() {
         </div>
       </div>
 
-      {/* Prose styles via style tag */}
-      <style jsx global>{`
-        .prose-custom h1 {
-          font-family: var(--font-syne);
-          font-size: 1.75rem;
-          font-weight: 800;
-          color: #f0f4ff;
-          margin-bottom: 1rem;
-          margin-top: 2rem;
-          line-height: 1.2;
-        }
-        .prose-custom h1:first-child { margin-top: 0; }
-        .prose-custom h2 {
-          font-family: var(--font-syne);
-          font-size: 1.2rem;
-          font-weight: 700;
-          color: #00e5ff;
-          margin-top: 2rem;
-          margin-bottom: 0.75rem;
-          letter-spacing: 0.02em;
-        }
-        .prose-custom h3 {
-          font-family: var(--font-syne);
-          font-size: 1rem;
-          font-weight: 600;
-          color: #f0f4ff;
-          margin-top: 1.5rem;
-          margin-bottom: 0.5rem;
-        }
-        .prose-custom p {
-          color: #8896b3;
-          line-height: 1.8;
-          margin-bottom: 1rem;
-          font-size: 0.95rem;
-        }
-        .prose-custom strong {
-          color: #f0f4ff;
-          font-weight: 600;
-        }
-        .prose-custom em { color: #00ffa3; }
-        .prose-custom a {
-          color: #00e5ff;
-          text-decoration: none;
-          border-bottom: 1px solid rgba(0,229,255,0.3);
-          transition: border-color 0.2s;
-        }
-        .prose-custom a:hover { border-color: #00e5ff; }
-        .prose-custom ul {
-          list-style: none;
-          padding: 0;
-          margin-bottom: 1rem;
-        }
-        .prose-custom ul li {
-          color: #8896b3;
-          font-size: 0.9rem;
-          padding: 0.25rem 0 0.25rem 1.25rem;
-          position: relative;
-          line-height: 1.7;
-        }
-        .prose-custom ul li::before {
-          content: "▸";
-          color: #00e5ff;
-          position: absolute;
-          left: 0;
-          font-size: 0.75rem;
-          top: 0.4rem;
-        }
-        .prose-custom hr {
-          border: none;
-          border-top: 1px solid rgba(0,229,255,0.15);
-          margin: 2rem 0;
-        }
-        .prose-custom code {
-          font-family: var(--font-jetbrains);
-          font-size: 0.8rem;
-          background: rgba(0,229,255,0.08);
-          border: 1px solid rgba(0,229,255,0.15);
-          padding: 0.15rem 0.4rem;
-          border-radius: 4px;
-          color: #00e5ff;
-        }
-        .prose-custom blockquote {
-          border-left: 2px solid rgba(0,229,255,0.4);
-          padding-left: 1rem;
-          margin: 1.5rem 0;
-        }
-        .prose-custom blockquote p { color: #4a5568; font-style: italic; }
-      `}</style>
     </div>
   );
 }
