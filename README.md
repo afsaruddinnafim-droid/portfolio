@@ -26,10 +26,10 @@ cp .env.local.example .env.local
 # 3. Start dev server
 npm run dev
 ```
+Open [http://localhost:3000](http://localhost:3000)
 
 Alternatively View the live site at https://portfolio-csf7.vercel.app
 
-Open [http://localhost:3000](http://localhost:3000)
 
 ## 📁 Project Structure
 
